@@ -3,14 +3,145 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
-.topNav {
-    align-content: center;
-    display: inline-flex;
+.container {
+    width: 100% !important;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
 }
 
-#banner {
-    float: right;
+.navbar-brand {
+    font-size: 30px !important;
+    font-weight: bold;
+}
 
+#nav-obj {
+    margin-right: 100px !important;
+}
+
+.navbar-nav>li {
+    padding-left: 25px;
+    padding-right: 15px;
+
+}
+
+/* .navbar-nav>li>a {
+    font-size: 15px !important;
+
+} */
+.row {
+    display: inline-block !important;
+    padding-left: 5%;
+}
+
+.nav-link:hover {
+    color: darkorange !important
+}
+
+.header-area {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+
+}
+
+.jumbotron em {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: bolder;
+    color: #fba70c
+}
+
+.jumbotron p {
+    color: #888888 !important;
+}
+
+.btn-round {
+    background-color: #fba70c;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.orange {
+    background-color: #f4813f;
+}
+
+.btn-round:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.top-area {
+    width: 100%;
+    height: 100vh;
+
+    z-index: 1;
+}
+
+.jumbotron h1 {
+    font-weight: bolder;
+    /* width: 50%; */
+    font-size: 80px;
+}
+
+.top-area .header-text .top-header {
+    position: relative;
+    align-self: center;
+}
+
+
+.banner-class {
+    background-image: url(./assets/banner-bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    z-index: 3;
+    height: inherit;
+}
+
+.box {
+    padding-top: 2%;
+    text-align: center;
+    /* background-color: white; */
+    width: 30%;
+    height: 350px;
+    margin-top: 210px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+}
+
+.feature-heading {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.feature-text {
+    padding-top: 10px;
+    color: #888888 !important;
+}
+
+@media screen and(max-width: 1200px) {
+    .box {
+        width: 40%
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .box {
+        width: 90%
+    }
 }
