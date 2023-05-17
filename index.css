@@ -1,5 +1,5 @@
 * {
-    background: #fff;
+    /* background: #fff; */
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -7,15 +7,27 @@
     padding: 0;
 }
 
-.container {
+.body {
+    width: 100%;
+}
+
+/* .container-feature {
     width: 100% !important;
-    height: auto;
+    height: 100vh !important;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
+} */
+
+.container-feature {
+    padding: 40px;
+    /* margin-top: 10%; */
+    width: 100% !important;
+    height: auto !important;
 }
+
 
 .navbar-brand {
     font-size: 30px !important;
@@ -32,17 +44,69 @@
 
 }
 
-/* .navbar-nav>li>a {
-    font-size: 15px !important;
-
-} */
-.row {
+.header-row {
     display: inline-block !important;
     padding-left: 5%;
 }
 
+/* .feature-row {
+    position: relative;
+    width: 70%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: 10%;
+    margin-top: 210px;
+    justify-content: center;
+} */
+
+.row-feature {
+    width: 60%;
+    margin: 0 auto !important;
+    margin-top: 10% !important;
+}
+
+.col-feature {
+    width: 60%;
+    margin: 0 auto !important;
+    margin-top: 10% !important;
+}
+
+/* .card {
+    margin-left: 20px;
+} */
+
+.card {
+    z-index: 5;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-body {
+    z-index: 7;
+}
+
+.about-big {
+    z-index: 6;
+    font-family: Arial;
+    font-size: 90px;
+    color: #fdefe9;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
 .nav-link:hover {
     color: darkorange !important
+}
+
+.navbar-collapse {
+    padding-left: 100px;
 }
 
 .header-area {
@@ -52,12 +116,13 @@
 
 }
 
-.jumbotron em {
+.jumbo-em {
     font-size: 70px;
     font-style: normal;
     font-weight: bolder;
     color: #fba70c
 }
+
 
 .jumbotron p {
     color: #888888 !important;
@@ -76,8 +141,37 @@
     cursor: pointer;
 }
 
-.orange {
-    background-color: #f4813f;
+.gold-text {
+    color: #fba70c !important;
+    font-size: 2.5rem !important;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.white-header-text {
+    color: white !important;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.white-text {
+    color: white !important;
+    text-align: left;
+}
+
+.align-text-center {
+    text-align: center !important;
+}
+
+.orange-text {
+    color: #f4813f !important;
+    font-size: 2rem !important;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.orange-bg {
+    background-color: #f4813f !important;
 }
 
 .btn-round:hover {
@@ -98,9 +192,11 @@
     font-size: 80px;
 }
 
-.top-area .header-text .top-header {
-    position: relative;
-    align-self: center;
+.header-text {
+    text-align: left;
+    width: 50% !important;
+    padding-top: 10% !important;
+    padding-left: 10% !important;
 }
 
 
@@ -112,16 +208,63 @@
     height: inherit;
 }
 
+.left-bg {
+    background-image: url(./assets/left-bg-decor.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.left-image {
+    width: inherit;
+    background-image: url(./assets/left-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    height: inherit;
+}
+
+.footer-image {
+    background-image: url(./assets/footer-bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .box {
     padding-top: 2%;
     text-align: center;
     /* background-color: white; */
-    width: 30%;
-    height: 350px;
-    margin-top: 210px;
-    margin-bottom: 20px;
+    width: 21%;
+    height: 360px;
     box-sizing: border-box;
 
+}
+
+.vertical-box {
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-box img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.vertical-box p {
+    margin: 0;
+    margin-top: 5px;
+    color: #888888 !important;
+}
+
+.vertical-box h4 {
+    margin: 0;
+    margin-top: 10px;
+    text-align: left;
 }
 
 .feature-heading {
@@ -134,14 +277,113 @@
     color: #888888 !important;
 }
 
-@media screen and(max-width: 1200px) {
-    .box {
-        width: 40%
-    }
+.testimonial-box {
+    background-color: #f3724e;
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    position: relative;
+    margin-bottom: 100px;
+    margin-left: 300px;
+    border-radius: 5px;
+}
+
+.testimonial-image {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-content {
+    margin-left: 20px;
+}
+
+.contact-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 5px;
+}
+
+.form-group {
+    padding-bottom: 20px;
+    padding-left: 5%;
+}
+
+.resize-form {
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10%;
+    padding-left: 10%;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    width: 100% !important;
+    padding: 10%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    height: 200px;
+}
+
+.btn-contact {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+    background-color: #f3724e !important;
+    color: white;
+    border: none;
+    border-radius: 500px !important;
+}
+
+.testimonial-controls {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.testimonial-controls button {
+    margin: 0 5px;
+}
+
+.footer-line {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(247, 222, 222);
 }
 
 @media screen and(max-width: 600px) {
-    .box {
-        width: 90%
+    .header-row {
+        width: 100%;
+        background-color: white;
+    }
+
+    .container-fluid {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
