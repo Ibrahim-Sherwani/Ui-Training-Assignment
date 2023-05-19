@@ -323,6 +323,10 @@
     border-top: 1px solid rgb(247, 222, 222);
 }
 
+.testimonial-margin {
+    padding-bottom: 7% !important;
+}
+
 /* .testimonial-content {
     margin-left: 20px;
 } */
@@ -381,7 +385,7 @@
     }
 
     .testimonial-box {
-        margin-top: 200px !important;
+        margin-top: 100px !important;
     }
 }
 
@@ -392,6 +396,10 @@
 
     .footer-image {
         background-size: cover;
+    }
+
+    .testimonial-margin {
+        margin-top: 900px !important;
     }
 }
 
@@ -440,8 +448,14 @@
     .disp-flex {
         display: contents;
     }
-
 }
+
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+    .testimonial-margin {
+        margin-top: 1% !important;
+    }
+}
+
 
 
 @media (max-width: 440) {
