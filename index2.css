@@ -142,6 +142,7 @@
 
 .vertical-box {
     width: 100%;
+    /* max-width: 70%; */
     height: 120px;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -152,7 +153,7 @@
 
 .vertical-box img {
     width: 80px;
-    margin-right: 10px;
+    padding-right: 10px;
 }
 
 .vertical-box p {
@@ -194,16 +195,17 @@
 
 .jumbotron {
     position: absolute;
+    display: flex;
     margin-top: 0;
     transition: top 0.3s ease;
     max-width: 40%;
-    min-width: 456px;
+    /* min-width: 456px; */
 }
 
 
 .jumbotron h1 {
     font-weight: bolder;
-    font-size: 80px;
+    /* font-size: 80px; */
 }
 
 .jumbo-em {
@@ -222,7 +224,7 @@
 }
 
 .pad-bottom {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 /* 
@@ -232,6 +234,9 @@
     max-height: 300px
 } */
 
+.my-text-center {
+    text-align: center;
+}
 
 .jumbotron p {
     color: #888888 !important;
@@ -242,11 +247,102 @@
     background-color: unset !important;
 }
 
+.testimonial-box {
+    background-color: #f3724e;
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+    width: 350px;
+    position: relative;
+    /* margin-bottom: 100px;
+    margin-left: 300px; */
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.testimonial-image {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 5px;
+}
+
+.form-group {
+    padding-bottom: 20px;
+    padding-left: 5%;
+}
+
+.resize-form {
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10%;
+    padding-left: 10%;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    width: 100% !important;
+    padding: 10%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    height: 200px;
+}
+
+.footer-line {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(247, 222, 222);
+}
+
+/* .testimonial-content {
+    margin-left: 20px;
+} */
+
+.disp-flex {
+    display: contents;
+    align-items: center;
+}
+
+@media (min-width: 1330px) {
+    .vertical-box {
+        max-width: 80%;
+    }
+}
+
 @media (max-width: 1320px) {
-    .jumbotron {
+    .jumbotron-top {
         margin-top: 490px;
-        width: fit-content;
-        max-width: 50%;
+        width: fit-content !important;
+        max-width: 50% !important;
     }
 
     /* .banner-class {
@@ -256,10 +352,11 @@
     .pad {
         margin-top: 550px;
     }
+
 }
 
 @media (max-width: 805px) {
-    .jumbotron {
+    .jumbotron-top {
         margin-top: 490px;
         width: fit-content;
         max-width: 50%;
@@ -272,10 +369,39 @@
     .pad {
         margin-top: 550px;
     }
+
+    .display-none {
+        display: none;
+    }
+
+
+    .vertical-box {
+        margin-top: 80px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .testimonial-box {
+        margin-top: 200px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .pad-bottom-section {
+        margin-top: 860px !important;
+    }
+
+    .footer-image {
+        background-size: cover;
+    }
 }
 
 @media (max-width: 600px) {
-    .jumbotron {
+
+    .resize-mobile {
+        width: 90%;
+    }
+
+    .jumbotron-top {
         margin-top: 300px;
     }
 
@@ -286,14 +412,46 @@
     .pad {
         margin-top: 350px;
     }
+
+    .pad-bottom-section {
+        margin-top: 840px !important;
+    }
+
+    .left-bg {
+        background-size: contain;
+    }
+
+    .testimonial-box {
+        width: 295px;
+    }
+
+    .bottom-contact-text {
+        width: fit-content;
+    }
+
+    .bottom-footer-text {
+        width: fit-content;
+    }
+
+    .footer-height {
+        height: 130vh !important;
+    }
+
+    .disp-flex {
+        display: contents;
+    }
+
 }
 
-/* 
-@media (max-width: 992) {
-    .collapse-nav {
-        width: 100%;
+
+@media (max-width: 440) {
+
+    .jumbotron h1 {
+        font-size: 0.7rem !important;
     }
-} */
+
+
+}
 
 @media (max-width: 1px) {
     .jumbotron {
