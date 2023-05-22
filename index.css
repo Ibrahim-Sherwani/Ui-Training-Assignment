@@ -391,7 +391,7 @@
 
 @media (max-width: 767px) {
     .pad-bottom-section {
-        margin-top: 860px !important;
+        margin-top: 100px !important;
     }
 
     .footer-image {
@@ -399,7 +399,7 @@
     }
 
     .testimonial-margin {
-        margin-top: 900px !important;
+        margin-top: 50px !important;
     }
 }
 
@@ -422,7 +422,7 @@
     }
 
     .pad-bottom-section {
-        margin-top: 840px !important;
+        margin-top: 100px !important;
     }
 
     .left-bg {
