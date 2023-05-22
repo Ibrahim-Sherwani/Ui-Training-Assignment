@@ -456,6 +456,18 @@
     .disp-flex {
         display: contents;
     }
+
+    .text-center {
+        padding-left: 20px !important;
+    }
+
+    .footer-top-text {
+        margin-top: 20px;
+    }
+
+    .left-pad-testimonial {
+        padding-left: 50px !important;
+    }
 }
 
 @media only screen and (max-width: 500px) and (min-width: 300px) {
