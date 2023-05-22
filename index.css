@@ -359,6 +359,14 @@
 
 }
 
+/* @media (max-width: 990px) {
+    .navbar-width {
+        display: inline-block !important;
+        width: 100%;
+        background-color: white;
+    }
+} */
+
 @media (max-width: 805px) {
     .jumbotron-top {
         margin-top: 490px;
